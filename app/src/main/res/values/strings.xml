@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Shop_project</string>
+    <string name="application_name">StarSet</string>
+
+    <string name="text_btn_enter">Войти</string>
+    <string name="text_btn_reg">Зарегистрироваться</string>
+
+    <string name="regist">Зарегистрироваться</string>
+    <string name="enter">Есть аккаунт? Войти</string>
+    <string name="forgot_pass">Забыли пароль?</string>
+    <string name="registration_name">Регистрация</string>
+
+    <string name="hint_email">Почта</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_password_2">Подтверждение</string>
+
+    <string name="hint_surname">Фамилия</string>
+    <string name="hint_name">Имя</string>
+
+    <string name="categories">Категории</string>
+    <string name="products">Товары</string>
+    <string name="text_buy">Купить</string>
+
+    <string name="text_searchview">Поиск...</string>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bkg">
+
+    <FrameLayout
+        android:id="@+id/frame_bkg"
+        android:layout_width="350dp"
+        android:layout_height="471dp"
+        android:background="@drawable/bkg_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
+
+
+        <TextView
+            android:id="@+id/text_name_shop"
+            style="@style/style_application_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/application_name"
+            android:layout_gravity="center"
+            android:translationY="-165dp" />
+
+        <EditText
+            android:id="@+id/tb_email"
+            style="@style/tb_style"
+            android:layout_width="287dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:translationX="30dp"
+            android:translationY="140dp" />
+
+        <EditText
+            android:id="@+id/tb_password"
+            style="@style/tb_style"
+            android:layout_width="287dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:translationX="30dp"
+            android:translationY="230dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_enter"
+            style="@style/btn_style"
+            android:layout_width="212dp"
+            android:layout_height="62dp"
+            android:text="@string/text_btn_enter"
+            android:translationX="70dp"
+            android:translationY="340dp"/>
+
+        <TextView
+            android:id="@+id/link_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jura_light"
+            android:hint="@string/forgot_pass"
+            android:textColor="#696969"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="160dp"
+            android:translationY="280dp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/link_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jura_light"
+            android:minHeight="48dp"
+            android:text="@string/regist"
+            android:textColor="#030112"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationX="100dp"
+            android:translationY="410dp" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

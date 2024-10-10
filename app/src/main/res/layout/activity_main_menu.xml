@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bkg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainMenu_Activity">
+
+    <FrameLayout
+        android:layout_width="411dp"
+        android:layout_height="800dp"
+        android:background="@drawable/bkg_main_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <SearchView
+            android:theme="@style/AppSearchView"
+            android:queryHint="@string/text_searchview"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:translationX="30dp"
+            android:translationY="25dp"
+            android:queryBackground="@null"
+            android:iconifiedByDefault="false"
+            />
+
+        <View
+            android:id="@+id/category"
+            android:layout_width="390dp"
+            android:layout_height="180dp"
+            android:background="@drawable/bkg_categories"
+            android:translationX="10dp"
+            android:translationY="90dp" />
+
+        <TextView
+            android:id="@+id/text_name_shop"
+            style="@style/style_categories_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categories"
+            android:translationX="30dp"
+            android:translationY="90dp" />
+
+        <HorizontalScrollView
+            android:layout_width="380dp"
+            android:layout_height="110dp"
+            android:translationX="15dp"
+            android:translationY="145dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="ScrollViewSize,VisualLintBounds">
+
+                <ImageView
+                    android:id="@+id/image_headphones"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/headphones"
+                    tools:layout_editor_absoluteX="31dp" />
+
+                <ImageView
+                    android:id="@+id/image_mouse"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/mouse"
+                    tools:layout_editor_absoluteX="31dp" />
+
+                <ImageView
+                    android:id="@+id/image_microphone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/microphone"
+                    tools:layout_editor_absoluteX="31dp" />
+
+                <ImageView
+                    android:id="@+id/image_keyboard"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/keyboard"
+                    tools:layout_editor_absoluteX="31dp" />
+
+                <ImageView
+                    android:id="@+id/image_carpet"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/carpet"
+                    tools:layout_editor_absoluteX="31dp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/Products"
+            android:layout_width="390dp"
+            android:layout_height="385dp"
+            android:background="@drawable/bkg_categories"
+            android:translationX="10dp"
+            android:translationY="280dp" />
+
+        <TextView
+            android:id="@+id/text_Products"
+            style="@style/style_categories_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/products"
+            android:translationX="30dp"
+            android:translationY="280dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:translationY="675dp"
+            android:layout_height="125dp"
+            tools:ignore="VisualLintBounds">
+
+
+            <ImageView
+                android:id="@+id/icon_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:translationX="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                app:srcCompat="@drawable/home_act" />
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:importantForAccessibility="no"
+                android:translationX="40dp"
+                android:translationY="20dp"
+                app:srcCompat="@drawable/search_icon"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/icon_korzina"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:importantForAccessibility="no"
+                android:translationX="-120dp"
+                android:translationY="20dp"
+                app:srcCompat="@drawable/korzina_icon"
+                tools:ignore="ImageContrastCheck" />
+
+
+            <ImageView
+                android:id="@+id/icon_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:importantForAccessibility="no"
+                android:translationX="-30dp"
+                android:translationY="20dp"
+                app:srcCompat="@drawable/profile_icon"
+                tools:ignore="ImageContrastCheck" />
+        </GridLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
