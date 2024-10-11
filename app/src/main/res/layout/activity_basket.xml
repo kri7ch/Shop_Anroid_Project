@@ -6,8 +6,8 @@
     android:background="@drawable/bkg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".Activity_Search">
+    tools:context=".Activity_Basket">
+
     <FrameLayout
         android:layout_width="411dp"
         android:layout_height="800dp"
@@ -37,15 +37,6 @@
             android:translationX="5dp"
             android:translationY="90dp" />
 
-        <TextView
-            android:id="@+id/text_name_shop"
-            style="@style/style_categories_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/categories"
-            android:translationX="30dp"
-            android:translationY="90dp" />
-
         <GridLayout
             android:layout_width="match_parent"
             android:background="@color/white"
@@ -68,26 +59,26 @@
 
             <ImageView
                 android:id="@+id/icon_search"
-                android:layout_width="wrap_content"
-                android:layout_height="78dp"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_column="1"
                 android:importantForAccessibility="no"
-                android:translationX="33dp"
-                android:translationY="-6dp"
-                app:srcCompat="@drawable/search_act"
-                tools:ignore="ImageContrastCheck,VisualLintBounds" />
+                android:translationX="55dp"
+                android:translationY="20dp"
+                app:srcCompat="@drawable/search_icon"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/icon_korzina"
-                android:layout_width="58dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="101dp"
                 android:layout_row="0"
                 android:layout_column="3"
                 android:importantForAccessibility="no"
-                android:translationX="-120dp"
-                android:translationY="20dp"
-                app:srcCompat="@drawable/korzina_icon"
+                android:translationX="-100dp"
+                android:translationY="-16dp"
+                app:srcCompat="@drawable/basket_act"
                 tools:ignore="ImageContrastCheck" />
 
 
@@ -98,18 +89,27 @@
                 android:layout_row="0"
                 android:layout_column="3"
                 android:importantForAccessibility="no"
-                android:translationX="-30dp"
+                android:translationX="15dp"
                 android:translationY="20dp"
                 app:srcCompat="@drawable/profile_icon"
                 tools:ignore="ImageContrastCheck" />
         </GridLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/categories_list"
+            android:id="@+id/product_in_basket_list"
             android:layout_width="410dp"
-            android:layout_height="510dp"
+            android:layout_height="380dp"
             android:translationX="0dp"
-            android:translationY="150dp"/>
+            android:translationY="100dp"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="410dp"
+            android:layout_height="180dp"
+            android:translationX="0dp"
+            android:translationY="480dp"/>
+
 
     </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
