@@ -31,10 +31,10 @@
 
         <View
             android:id="@+id/category"
-            android:layout_width="390dp"
+            android:layout_width="400dp"
             android:layout_height="580dp"
             android:background="@drawable/bkg_categories"
-            android:translationX="10dp"
+            android:translationX="5dp"
             android:translationY="90dp" />
 
         <TextView
@@ -103,6 +103,13 @@
                 app:srcCompat="@drawable/profile_icon"
                 tools:ignore="ImageContrastCheck" />
         </GridLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_list"
+            android:layout_width="410dp"
+            android:layout_height="510dp"
+            android:translationX="0dp"
+            android:translationY="150dp"/>
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

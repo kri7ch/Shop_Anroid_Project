@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:paddingBottom="10dp">
+    <FrameLayout
+        android:layout_width="390dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bkg_for_category"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <ImageView
+            android:id="@+id/image_category"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:translationX="0dp"
+            android:translationY="2dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/headphones"/>
+
+        <TextView
+            android:id="@+id/textName_category"
+            style="@style/style_name_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:text="TextView"
+            android:translationX="-30dp"
+            android:translationY="5dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textDesc_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:translationY="54dp"
+            android:translationX="-30dp"
+            android:textAlignment="textEnd"
+            style="@style/style_desc_category"
+            android:text="TextView"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+</LinearLayout>
