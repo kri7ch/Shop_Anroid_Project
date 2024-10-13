@@ -29,7 +29,7 @@ class Activity_Search : AppCompatActivity() {
     private fun categoryInformation() {
         items = arrayListOf(
             Categories("headphones", "Наушники", "Logitech, Razer, HyperX,\n" +
-                    " SteelSeries, Bloody, JBL, Corsair"),
+                    " SteelSeries, Bloody, Corsair"),
             Categories("mouse", "Мышки", "Logitech, Razer, HyperX,\n" +
                     " SteelSeries, Bloody, A4Tech"),
             Categories("microphone", "Микрофоны", "Logitech, Razer, HyperX,\n" +

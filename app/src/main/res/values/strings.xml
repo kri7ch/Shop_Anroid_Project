@@ -23,5 +23,17 @@
 
     <string name="text_searchview">Поиск...</string>
     <string name="profile_text">Профиль</string>
+    <string name="lb_for_name">Name</string>
+    <string name="lb_for_email">Email</string>
+    <string name="orders">Заказы</string>
+    <string name="purchased">Купленные товары</string>
+    <string name="cooperation">Сотрудничество</string>
+    <string name="feedback">Оставить отзыв</string>
+    <string name="feedback_questions">Отзывы и вопросы</string>
+    <string name="support">Поддержка</string>
+    <string name="log_out">Выйти из аккаунта</string>
+    
+    <string name="log_out_title">"Выход из аккаунта"</string>
+    <string name="log_out_message">Вы точно хотите выйти из аккаунта?</string>
 
 </resources>

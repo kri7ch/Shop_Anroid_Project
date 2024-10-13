@@ -35,8 +35,26 @@
             android:translationX="10dp"
             android:translationY="90dp" />
 
+        <TextView
+            android:id="@+id/text_email"
+            style="@style/style_email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_for_email"
+            android:layout_gravity="center"
+            android:translationY="-195dp" />
+
+        <TextView
+            android:id="@+id/text_name"
+            style="@style/style_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_for_name"
+            android:layout_gravity="center"
+            android:translationY="-165dp" />
+
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/image_Profile_icon"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:importantForAccessibility="no"
@@ -45,7 +63,7 @@
             app:srcCompat="@drawable/profile_avatar" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/image_Settings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:importantForAccessibility="no"
@@ -60,7 +78,132 @@
             android:layout_height="385dp"
             android:background="@drawable/bkg_profile"
             android:translationX="10dp"
-            android:translationY="280dp" />
+            android:translationY="280dp"/>
+
+        <ScrollView
+            android:layout_width="390dp"
+            android:layout_height="385dp"
+            android:translationX="10dp"
+            android:translationY="280dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationX="10dp"
+                android:orientation="vertical"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/link_orders"
+                    style="@style/style_link"
+                    android:paddingTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orders"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/link_purchased"
+                    style="@style/style_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/purchased"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/line"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/link_cooperation"
+                    style="@style/style_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cooperation"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/link_feedback"
+                    style="@style/style_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feedback"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/link_feedback_questions"
+                    style="@style/style_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feedback_questions"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/link_support"
+                    style="@style/style_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/log_out"
+                    style="@style/style_link"
+                    android:paddingBottom="25dp"
+                    android:textColor="#FF0000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_out"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+        </ScrollView>
 
 
 
@@ -121,5 +264,7 @@
                 app:srcCompat="@drawable/profile_act"
                 tools:ignore="ImageContrastCheck" />
         </GridLayout>
+
+
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
