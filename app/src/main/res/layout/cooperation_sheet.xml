@@ -12,37 +12,47 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/icon_back2"
+            android:id="@+id/icon_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:importantForAccessibility="no"
             android:translationX="20dp"
-            android:translationY="25dp"
+            android:translationY="28dp"
             app:srcCompat="@drawable/icon_back" />
 
         <TextView
             android:id="@+id/text_name_shop"
             style="@style/style_sheet_text"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:translationY="15dp"
-            android:translationX="60dp"
+            android:translationX="65dp"
             android:text="@string/cooperation" />
 
         <LinearLayout
             android:layout_width="400dp"
             android:layout_height="531dp"
             android:layout_gravity="center"
+            android:orientation="vertical"
             android:translationY="30dp"
-            android:orientation="vertical">
+            tools:ignore="TextSizeCheck">
 
             <TextView
-                android:id="@+id/link_telegram"
-                style="@style/style_link"
+                android:id="@+id/text_info"
+                style="@style/style_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/purchased"
+                android:text="@string/text_info"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:autoLink=""
+                android:id="@+id/link_telegram"
+                style="@style/style_link"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/telegram"
                 tools:ignore="RtlSymmetry" />
 
             <TextView
@@ -50,16 +60,19 @@
                 style="@style/style_link"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/purchased"
+                android:text="@string/email"
+                android:textSize="22sp"
                 tools:ignore="RtlSymmetry" />
 
             <TextView
                 android:id="@+id/link_vk"
                 style="@style/style_link"
+                android:textSize="24sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/purchased"
+                android:text="@string/vk"
                 tools:ignore="RtlSymmetry" />
+
 
         </LinearLayout>
 

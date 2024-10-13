@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="632dp"
+        android:background="@drawable/bkg_for_sheet"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            style="@style/btn_style"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:text="@string/save"
+            android:layout_gravity="center"
+            android:translationY="250dp" />
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:translationX="25dp"
+            android:translationY="25dp"
+            app:srcCompat="@drawable/icon_back"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/text_name_shop"
+            style="@style/style_sheet_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="15dp"
+            android:translationX="120dp"
+            android:text="@string/settings"/>
+
+        <TextView
+            android:id="@+id/title_surname"
+            style="@style/style_for_titles"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:textAlignment="center"
+            android:translationX="20dp"
+            android:translationY="100dp"
+            tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/title_name"
+            style="@style/style_for_titles"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:translationX="20dp"
+            android:translationY="145dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/title_lastname"
+            style="@style/style_for_titles"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lastname"
+            android:textAlignment="center"
+            android:translationX="20dp"
+            android:translationY="190dp"
+            tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/editT_surname"
+            style="@style/style_for_param"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:autofillHints=""
+            android:hint="@string/surname"
+            android:translationX="130dp"
+            android:translationY="100dp"
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editT_name"
+            style="@style/style_for_param"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:autofillHints=""
+            android:hint="@string/name"
+            android:translationX="130dp"
+            android:translationY="145dp"
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editT_lastname"
+            style="@style/style_for_param"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:autofillHints=""
+            android:hint="@string/lastname"
+            android:translationX="130dp"
+            android:translationY="190dp"
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,DuplicateClickableBoundsCheck,DuplicateSpeakableTextCheck,VisualLintOverlap,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/title_email"
+            style="@style/style_for_titles"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_email"
+            android:textAlignment="center"
+            android:translationX="20dp"
+            android:translationY="235dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/editT_email"
+            style="@style/style_for_param"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:autofillHints=""
+            android:hint="@string/hint_email"
+            android:translationX="130dp"
+            android:translationY="235dp"
+            tools:ignore="RtlSymmetry,TextFields,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/title_paymentMethod"
+            style="@style/paymentMethod"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/paymentMethod"
+            android:translationX="20dp"
+            android:translationY="285dp"
+            tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,16 +1,13 @@
 package com.example.shop_project
 
-import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class Activity_Profile : AppCompatActivity() {
@@ -20,9 +17,16 @@ class Activity_Profile : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_profile)
 
+        dialogBoxes()
+
         setClickListener(R.id.icon_search, Activity_Search::class.java)
         setClickListener(R.id.icon_main, MainMenu_Activity::class.java)
         setClickListener(R.id.icon_korzina, Activity_Basket::class.java)
+
+
+    }
+
+    private fun dialogBoxes(){
 
         val close: TextView = findViewById(R.id.log_out)
         close.setOnClickListener {
@@ -39,6 +43,30 @@ class Activity_Profile : AppCompatActivity() {
             showSheet(R.layout.support_sheet)
         }
 
+        val cooperation: TextView = findViewById(R.id.link_cooperation)
+        cooperation.setOnClickListener {
+            showSheet(R.layout.cooperation_sheet)
+        }
+
+        val purchased: TextView = findViewById(R.id.link_purchased)
+        purchased.setOnClickListener {
+            showSheet(R.layout.purchased_goods)
+        }
+
+        val leaveReview: TextView = findViewById(R.id.link_feedback)
+        leaveReview.setOnClickListener {
+            showSheet(R.layout.leave_review)
+        }
+
+        val questionAnswer: TextView = findViewById(R.id.link_feedback_questions)
+        questionAnswer.setOnClickListener {
+            showSheet(R.layout.question_sheet)
+        }
+
+        val settings: ImageView = findViewById(R.id.image_Settings)
+        settings.setOnClickListener {
+            showSheet(R.layout.setting_sheet)
+        }
     }
 
     private fun showSheet(imageViewId: Int) {
@@ -49,8 +77,8 @@ class Activity_Profile : AppCompatActivity() {
     }
 
     private fun closureSheet(imageViewId: Int){
-        val backOrder: ImageView = dialog.findViewById(imageViewId)!!
-        backOrder.setOnClickListener {
+        val backSheet: ImageView = dialog.findViewById(imageViewId)!!
+        backSheet.setOnClickListener {
             dialog.dismiss()
         }
     }

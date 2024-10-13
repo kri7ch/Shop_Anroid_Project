@@ -40,4 +40,23 @@
     <string name="support_text">Поддержка</string>
     <string name="hint_message">Сообщение поддержке...</string>
 
+    <string name="text_info">По вопросам\nсотрудничества:</string>
+    <string name="telegram">#Telegram</string>
+    <string name="email">#Почта - rakhmaevdanil@gmail.com</string>
+    <string name="vk">#Вконтакте</string>
+    <string name="purchased_goods_text">Купленные\nтовары</string>
+    <string name="leave_review_text">Оставить отзыв</string>
+    <string name="hint_leave_review">Оставить отзыв...</string>
+    <string name="question_answer">Вопрос\nОтвет</string>
+    <string name="settings">Настройки</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="lastname">Отчество</string>
+    <string name="paymentMethod">Способ оплаты</string>
+    <string name="save">Сохранить</string>
+    <string name="rec_password">Восстановление\nпароля</string>
+    <string name="remembered">Вспомнил пароль!</string>
+    <string name="recover">Восстановить</string>
+
+
 </resources>

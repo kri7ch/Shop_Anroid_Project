@@ -3,46 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:windowSoftInputMode = "adjustResize"
     android:layout_height="match_parent">
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="632dp"
         android:background="@drawable/bkg_for_sheet"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/icon_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:importantForAccessibility="no"
-            android:translationX="25dp"
-            android:translationY="25dp"
-            app:srcCompat="@drawable/icon_back"
-            tools:ignore="ImageContrastCheck" />
-
-        <TextView
-            android:id="@+id/text_name_shop"
-            style="@style/style_sheet_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:translationY="15dp"
-            android:translationX="110dp"
-            android:text="@string/support_text"
-            tools:ignore="VisualLintOverlap" />
-
-        <EditText
-            android:layout_width="340dp"
-            android:layout_height="46dp"
-            style="@style/message_text"
-            android:autofillHints=""
-            android:background="@drawable/bkg_message"
-            android:hint="@string/hint_message"
-            android:paddingStart="20dp"
-            android:translationX="15dp"
-            android:translationY="560dp"
-            tools:ignore="RtlSymmetry,TextContrastCheck,TextFields,TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/image_send_message"
@@ -52,5 +19,36 @@
             android:translationX="365dp"
             android:translationY="565dp"
             app:srcCompat="@drawable/send" />
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:translationX="25dp"
+            android:translationY="30dp"
+            app:srcCompat="@drawable/icon_back"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/text_name_shop"
+            style="@style/style_sheet_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="15dp"
+            android:translationX="70dp"
+            android:text="@string/leave_review_text"/>
+
+        <EditText
+            style="@style/message_text"
+            android:layout_width="340dp"
+            android:layout_height="46dp"
+            android:autofillHints=""
+            android:background="@drawable/bkg_message"
+            android:hint="@string/hint_leave_review"
+            android:paddingStart="20dp"
+            android:translationX="15dp"
+            android:translationY="560dp"
+            tools:ignore="RtlSymmetry,TextFields,TouchTargetSizeCheck,TextContrastCheck" />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

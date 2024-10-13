@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -11,32 +11,30 @@
         android:background="@drawable/bkg_for_sheet"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/text_name_shop"
-            style="@style/style_sheet_text"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:translationY="15dp"
-            android:translationX="140dp"
-            android:text="@string/order_text" />
-
-
-
         <ImageView
             android:id="@+id/icon_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:translationX="25dp"
-            android:translationY="25dp"
             android:importantForAccessibility="no"
+            android:translationX="25dp"
+            android:translationY="45dp"
             app:srcCompat="@drawable/icon_back" />
 
+        <TextView
+            android:id="@+id/text_name_shop"
+            style="@style/style_sheet_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:translationY="15dp"
+            android:translationX="100dp"
+            android:text="@string/purchased_goods_text" />
+
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/question_list"
             android:layout_width="match_parent"
-            android:layout_height="520dp"
-            android:translationY="75dp" />
+            android:layout_height="490dp"
+            android:translationY="115dp" />
 
     </FrameLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
