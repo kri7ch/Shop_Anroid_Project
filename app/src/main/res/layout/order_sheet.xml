@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="632dp"
+        android:background="@drawable/bkg_for_sheet"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_name_shop"
+            style="@style/style_sheet_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="15dp"
+            android:translationX="140dp"
+            android:text="@string/order_text" />
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="25dp"
+            android:translationY="25dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/icon_back" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:translationY="75dp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

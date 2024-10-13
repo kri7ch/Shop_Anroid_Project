@@ -19,19 +19,18 @@
             android:name=".Activity_Basket"
             android:exported="false" />
         <activity
-            android:name=".test"
-            android:exported="false" />
-        <activity
             android:name=".Activity_Search"
             android:exported="true" />
         <activity
             android:name=".MainMenu_Activity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true" />
         <activity
             android:name=".Registration_Activity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -29,11 +29,15 @@
     <string name="purchased">Купленные товары</string>
     <string name="cooperation">Сотрудничество</string>
     <string name="feedback">Оставить отзыв</string>
-    <string name="feedback_questions">Отзывы и вопросы</string>
+    <string name="feedback_questions">Ответы на вопросы</string>
     <string name="support">Поддержка</string>
     <string name="log_out">Выйти из аккаунта</string>
     
     <string name="log_out_title">"Выход из аккаунта"</string>
     <string name="log_out_message">Вы точно хотите выйти из аккаунта?</string>
+
+    <string name="order_text">Заказы</string>
+    <string name="support_text">Поддержка</string>
+    <string name="hint_message">Сообщение поддержке...</string>
 
 </resources>
